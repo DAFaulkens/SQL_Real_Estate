@@ -1,0 +1,11 @@
+CREATE TABLE property(
+	property_id SERIAL PRIMARY KEY,
+	address VARCHAR(250) NOT NULL,
+	price_paid INTEGER NOT NULL,
+	appraisal_value INTEGER,
+	bedrooms SMALLINT,
+	bathrooms REAL,
+	sqrft INTEGER
+)
+
+### Table represents a specific property and a basic overview of the property. ###
