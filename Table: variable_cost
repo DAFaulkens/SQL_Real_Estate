@@ -1,1 +1,8 @@
-
+CREATE TABLE variable_cost(
+	payment_id SERIAL PRIMARY KEY,
+	property_id INTEGER REFERENCES property(property_id),
+	repair_type VARCHAR(250),
+	item_name VARCHAR(250),
+	repair_cost INTEGER,
+	pay_date DATE
+)
