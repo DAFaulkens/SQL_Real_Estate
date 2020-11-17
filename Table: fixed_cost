@@ -1,0 +1,11 @@
+CREATE TABLE fixed_cost(
+	property_id SERIAL Primary Key,
+	loan_type VARCHAR(250),
+	p_and_i INTEGER,
+	mortgage_insurance INTEGER,
+	home_insurance INTEGER,
+	property_tax INTEGER,
+	interest_rate REAL,
+	hoa_fee INTEGER,
+	payment_date DATE
+)
