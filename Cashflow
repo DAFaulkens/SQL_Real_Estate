@@ -1,0 +1,7 @@
+CREATE TABLE cashflow(
+	property_id INTEGER REFERENCES property(property_id),
+	renter_id INTEGER REFERENCES renter(renter_id),
+	total_rent INTEGER,
+	total_utilities INTEGER,
+	pay_period DATE
+)
