@@ -1,0 +1,12 @@
+CREATE TABLE renter(
+	renter_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(200),
+	last_name VARCHAR(200),
+	rent_amount INTEGER,
+	utilities_amount INTEGER,
+	late_fee INTEGER,
+	due_date DATE,
+	paid_date DATE,
+	email VARCHAR(250),
+	phone VARCHAR(50)
+)
