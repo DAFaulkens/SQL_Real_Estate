@@ -1,0 +1,7 @@
+CREATE TABLE room(
+	property_id INTEGER REFERENCES property(property_id),
+	renter_id INTEGER REFERENCES renter(renter_id),
+	dimension VARCHAR(200),
+	bathroom VARCHAR(150),
+	flooring VARCHAR(200)
+)
