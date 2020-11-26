@@ -1,5 +1,5 @@
 CREATE TABLE fixed_cost(
-	property_id SERIAL Primary Key,
+	property_id INTEGER REFERENCES property(property_id),
 	loan_type VARCHAR(250),
 	p_and_i INTEGER,
 	mortgage_insurance INTEGER,
